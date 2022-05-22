@@ -1,0 +1,29 @@
+body{
+    background: linear-gradient(crimson, navy);
+    color:green;;
+}
+#main{
+    width: 80%;
+    border: 3px dashed pink;
+    font-size: 30px;
+}
+#objects{
+    color:greenyellow;
+    font-size: 20px;
+}
+#cam{
+    border: 3px groove whitesmoke;
+    width: 450px;
+    height: 400px;
+}
+#result{
+    border: 3px double whitesmoke;
+    width: 450px;
+    height: 400px;
+}
+span{
+    color: limegreen;
+}
+b{
+    color: greenyellow;
+}

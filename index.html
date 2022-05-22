@@ -1,0 +1,76 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+   <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+<h1 id="main">Harry Potter Recognition</h1>
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+<b class="objects">
+  <h3>Harry Potter</h3>
+  <hr>
+  <h3>Lord Voldemort</h3>
+  <hr>
+  <h3>Aberforth Dumbledore</h3>
+  <hr>
+  <h3>Severus Snape</h3>
+  <hr>
+  <h3>Hermione Granger</h3>
+  <hr>
+  <h3>James Potter</h3>
+  <hr>
+  <h3>Ginny Weasley</h3>
+  <hr>
+  <h3>Neville Longbottom</h3>
+  <hr>
+  <h3>Nagini</h3>
+  <hr>
+  <h3>Rubeus Hagrid</h3>
+  <hr>
+  <h3>Ronald Weasley</h3>
+  <hr>
+  <h3>Bellatrix Lestrange</h3>
+  <hr>
+  <h3>Minerva McGonagall</h3>
+  <hr>
+</b>
+      
+      <br>
+
+      <p style="font-size: 22px;">Object : <span id="s1"></span> </p>
+      <p style="font-size: 22px;">Accuracy : <span id="s2"></span> </p>
+      
+      <label>Webcam View - </label>
+<div id="cam"></div>
+<br>
+<br>
+<div id="result"></div>
+<br>
+<button id="b1" class="btn btn-success" onclick="take()">TAKE IMAGE</button>
+<br><br>
+<button id="b2" class="btn btn-primary" onclick="check()">CHECK IMAGE</button>
+<br>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
